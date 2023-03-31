@@ -38,12 +38,13 @@ public class BookmarkCreator {
 		         bookmarkName = parts[1];
 		         url = parts[2];
 	        	 favIconUrl = parts[3];
+		         if (!categoryBookmarks.containsKey(category)) {
+			            categoryBookmarks.put(category, new ArrayList<String>());
+			         }
+			         categoryBookmarks.get(category).add("<DT><A HREF=\"" + url + "\" ICON=\"" + favIconUrl + "\">" + bookmarkName + "</A>");
 	         }
 	       
-	         if (!categoryBookmarks.containsKey(category)) {
-	            categoryBookmarks.put(category, new ArrayList<String>());
-	         }
-	         categoryBookmarks.get(category).add("<DT><A HREF=\"" + url + "\" ICON=\"" + favIconUrl + "\">" + bookmarkName + "</A>");
+
 	      }
 
 	      // Generate the bookmark file content

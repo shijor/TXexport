@@ -54,7 +54,7 @@ public class TabExtendExport {
                String tabfavIcon = (String) tabObject.get("favIcon");
              //  System.out.println("Tab Title: " + tabTitle);
              //  System.out.println("Tab URL: " + tabUrl);
-               if(tabTitle!=null) {
+               if(tabTitle!=null && tabTitle!="") {
             	   bookmarks.add(category+"~"+tabTitle+"~"+tabUrl+"~"+tabfavIcon);
                }
 
@@ -68,7 +68,7 @@ public class TabExtendExport {
                      String stackedfavIcon = (String) tabObject.get("favIcon");
                      //System.out.println("Stacked Item Title: " + stackedItemTitle);
                    //  System.out.println("Stacked Item URL: " + stackedItemUrl);
-                     if(stackedItemTitle!=null) {
+                     if(stackedItemTitle!=null && stackedItemTitle!="") {
                     	 bookmarks.add(category+"~"+stackedItemTitle+"~"+stackedItemUrl+"~"+stackedfavIcon);
                      }
                   }
