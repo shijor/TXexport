@@ -55,7 +55,7 @@ public class TabExtendExport {
              //  System.out.println("Tab Title: " + tabTitle);
              //  System.out.println("Tab URL: " + tabUrl);
                if(tabTitle!=null) {
-            	   bookmarks.add(category+"|"+tabTitle+"|"+tabUrl+"|"+tabfavIcon);
+            	   bookmarks.add(category+"~"+tabTitle+"~"+tabUrl+"~"+tabfavIcon);
                }
 
                // Extract the values for the "title" and "url" fields in "stackedItems"
@@ -69,7 +69,7 @@ public class TabExtendExport {
                      //System.out.println("Stacked Item Title: " + stackedItemTitle);
                    //  System.out.println("Stacked Item URL: " + stackedItemUrl);
                      if(stackedItemTitle!=null) {
-                    	 bookmarks.add(category+"|"+stackedItemTitle+"|"+stackedItemUrl+"|"+stackedfavIcon);
+                    	 bookmarks.add(category+"~"+stackedItemTitle+"~"+stackedItemUrl+"~"+stackedfavIcon);
                      }
                   }
                }

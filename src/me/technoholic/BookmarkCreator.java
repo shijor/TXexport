@@ -27,7 +27,7 @@ public class BookmarkCreator {
 	      Iterator<String> iterator = bookmarks.iterator();
 	      while (iterator.hasNext()) {
 	         String bookmark = iterator.next();
-	         String[] parts = bookmark.split("\\|");
+	         String[] parts = bookmark.split("\\~");
 	         String category = "";
 	         String bookmarkName = "";
 	         String url = "";
